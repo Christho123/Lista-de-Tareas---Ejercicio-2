@@ -34,6 +34,6 @@ Crear una aplicación que permita al cliente agregar, modificar, confirmar o eli
 
 ## Estructura del Proyecto
 📁 src/
- |--- index.html
- |--- styles.css
- |--- app.js
+  ├── index.html
+  ├── styles.css
+  └── app.js
