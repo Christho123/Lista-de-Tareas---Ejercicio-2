@@ -34,3 +34,14 @@ Crear una aplicación que permita al cliente agregar, modificar, confirmar o eli
 
 ## Estructura del Proyecto
 <pre lang="md"> ```bash 📁 src/ ├── index.html ├── style.css └── script.js ``` </pre>
+
+## Tecnologías Utilizadas
+- HTML
+- CSS
+- JavaScript
+
+## Metodología Ágil
+- SCRUM
+
+## Link de la Demo
+🔗 [Ver demo en vivo](https://kenntomi.github.io/lista-de-tareas/)
