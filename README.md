@@ -16,6 +16,16 @@ Crear una aplicación que permita al cliente agregar, modificar, confirmar o eli
 - Guardar en localStorage o JSON simulado
 - Documentar proyecto + readme
 
+## Roles Scrum
+
+| Rol              | Nombre del integrante      | Función principal                                       |
+|------------------|----------------------------|---------------------------------------------------------|
+| Scrum Master     | Alfredo Gonzales           | Supervisa el avance del equipo y organiza las reuniones |
+| Product Owner    | Diego Espinoza             | Establece las metas del proyecto y ordena las tareas    |
+| Developer 1      | Gadiel Collazos            | Se encarga del diseño visual usando HTML y CSS          |
+| Developer 2      | Christopher Sosa           | Desarrolla las validaciones interactivas con JavaScript |
+| Developer 3      | Edson Rojas                | Integra la API simulada y redacta la documentación      |
+
 ### Asignación de Tareas
 
 | Integrantes          |    Crear interfaz HTML   |  Implementar estilos con CSS  |  Agregar, tachar y eliminar tareas  | Guardar en localStorage o JSON simulado | Documentar proyecto + readme |
