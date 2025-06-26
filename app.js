@@ -62,3 +62,33 @@ function mostrarTareas(filtro = "") {
 function guardarTareas() {
   localStorage.setItem("tareas", JSON.stringify(tareas));
 }
+
+// Eliminar -- Edson Rojas
+function eliminarTarea(id) {
+  if (confirm("¿Estás seguro de eliminar esta tarea?")) {
+    tareas = tareas.filter(t => t.id !== id);
+    guardarTareas();
+    mostrarTareas();
+  }
+}
+
+// Editar -- Edson Rojas
+function editarTarea(id) {
+  const tarea = tareas.find(t => t.id === id);
+  document.getElementById("nombre").value = tarea.nombre;
+  document.getElementById("descripcion").value = tarea.descripcion;
+  document.getElementById("fecha").value = tarea.fecha;
+  idEditar = id;
+}
+
+// Limpiar inputs -- Edson Rojas
+function limpiarFormulario() {
+  document.getElementById("nombre").value = "";
+  document.getElementById("descripcion").value = "";
+  document.getElementById("fecha").value = "";
+}
+
+// Buscar -- Edson Rojas
+document.getElementById("buscar").addEventListener("input", (e) => {
+  mostrarTareas(e.target.value);
+});
