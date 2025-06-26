@@ -11,16 +11,17 @@ Crear una aplicación que permita al cliente agregar, modificar, confirmar o eli
 
 # Sprint Backlog
 - Crear interfaz HTML
+- Implementar estilos con CSS
 - Agregar, tachar y eliminar tareas
 - Guardar en localStorage o JSON simulado
 - Documentar proyecto + readme
 
 ### Asignación de Tareas
 
-| Integrantes          |    Crear interfaz HTML   |  Agregar, tachar y eliminar tareas |  Notificaciones al correo | Guardar en localStorage o JSON simulado | Documentar proyecto + readme |
-|----------------------|--------------------------|------------------------------------|---------------------------|-----------------------------------------|------------------------------|
-| Gadiel Collazos      |                          |                                    |                           |                                         |                              |
-| Diego Espinoza       |                          |                                    |                           |                                         |           X                  |
-| Alfredo Gonzales     |                          |                                    |                           |                                         |           X                  |
-| Edson Rojas          |                          |                                    |                           |                                         |                              |
-| Christopher Sosa     |                          |                                    |                           |                                         |                              |
+| Integrantes          |    Crear interfaz HTML   |  Implementar estilos con CSS  |  Agregar, tachar y eliminar tareas  | Guardar en localStorage o JSON simulado | Documentar proyecto + readme |
+|----------------------|--------------------------|-------------------------------|-------------------------------------|-----------------------------------------|------------------------------|
+| Gadiel Collazos      |            X             |                               |                                     |                                         |                              |
+| Diego Espinoza       |                          |               X               |                                     |                                         |                              |
+| Alfredo Gonzales     |                          |                               |                                     |                                         |               X              |
+| Edson Rojas          |                          |                               |                                     |                     X                   |                              |
+| Christopher Sosa     |                          |                               |                   X                 |                                         |                              |
