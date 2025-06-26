@@ -33,7 +33,4 @@ Crear una aplicación que permita al cliente agregar, modificar, confirmar o eli
 - Guardado automático en el navegador (localStorage)
 
 ## Estructura del Proyecto
-📁 src/
-  ├── index.html
-  ├── styles.css
-  └── app.js
+<pre lang="md"> ```bash 📁 src/ ├── index.html ├── style.css └── script.js ``` </pre>
