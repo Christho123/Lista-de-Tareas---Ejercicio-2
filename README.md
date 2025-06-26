@@ -25,3 +25,15 @@ Crear una aplicación que permita al cliente agregar, modificar, confirmar o eli
 | Alfredo Gonzales     |                          |                               |                                     |                                         |               X              |
 | Edson Rojas          |                          |                               |                                     |                     X                   |                              |
 | Christopher Sosa     |                          |                               |                   X                 |                                         |                              |
+
+## Características Principales
+- Agregar tareas
+- Marcar como completadas
+- Eliminar tareas
+- Guardado automático en el navegador (localStorage)
+
+## Estructura del Proyecto
+📁 src/
+ |--- index.html
+ |--- styles.css
+ |--- app.js
