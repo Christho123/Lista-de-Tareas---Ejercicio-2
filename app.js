@@ -1,10 +1,10 @@
 let tareas = JSON.parse(localStorage.getItem("tareas")) || [];
 let idEditar = null;
 
-// Mostrar tareas al cargar
+// Mostrar tareas al cargar -- Christhoper Sosa
 window.addEventListener("DOMContentLoaded", mostrarTareas);
 
-// Agregar o modificar
+// Agregar o modificar -- Christhoper Sosa
 document.getElementById("agregar-btn").addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value.trim();
   const descripcion = document.getElementById("descripcion").value.trim();
@@ -13,13 +13,13 @@ document.getElementById("agregar-btn").addEventListener("click", () => {
   if (nombre === "" || descripcion === "" || fecha === "") return alert("Completa todos los campos");
 
   if (idEditar) {
-    // Modificar
+    // Modificar -- Christhoper Sosa
     tareas = tareas.map(t =>
       t.id === idEditar ? { id: t.id, nombre, descripcion, fecha } : t
     );
     idEditar = null;
   } else {
-    // Agregar
+    // Agregar -- Christhoper Sosa
     const nueva = {
       id: Date.now(),
       nombre,
@@ -34,7 +34,7 @@ document.getElementById("agregar-btn").addEventListener("click", () => {
   limpiarFormulario();
 });
 
-// Mostrar tareas
+// Mostrar tareas -- Christhoper Sosa
 function mostrarTareas(filtro = "") {
   const cuerpo = document.getElementById("tabla-tareas");
   cuerpo.innerHTML = "";
@@ -58,12 +58,12 @@ function mostrarTareas(filtro = "") {
     });
 }
 
-// Guardar
+// Guardar -- Christhoper Sosa
 function guardarTareas() {
   localStorage.setItem("tareas", JSON.stringify(tareas));
 }
 
-// Eliminar
+// Eliminar -- Edson Rojas
 function eliminarTarea(id) {
   if (confirm("¿Estás seguro de eliminar esta tarea?")) {
     tareas = tareas.filter(t => t.id !== id);
@@ -72,7 +72,7 @@ function eliminarTarea(id) {
   }
 }
 
-// Editar
+// Editar -- Edson Rojas
 function editarTarea(id) {
   const tarea = tareas.find(t => t.id === id);
   document.getElementById("nombre").value = tarea.nombre;
@@ -81,14 +81,14 @@ function editarTarea(id) {
   idEditar = id;
 }
 
-// Limpiar inputs
+// Limpiar inputs -- Edson Rojas
 function limpiarFormulario() {
   document.getElementById("nombre").value = "";
   document.getElementById("descripcion").value = "";
   document.getElementById("fecha").value = "";
 }
 
-// Buscar
+// Buscar -- Edson Rojas
 document.getElementById("buscar").addEventListener("input", (e) => {
   mostrarTareas(e.target.value);
 });
